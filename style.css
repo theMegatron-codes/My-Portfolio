@@ -1,0 +1,103 @@
+
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  html, body {
+    width: 100%; height: 100%;
+    margin: 0; padding: 0;
+    overflow-x: hidden;  /* prevent horizontal scroll */
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: white;
+  }
+
+  nav {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 60px;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+  }
+  nav .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /* Hero section */
+  .hero {
+    margin-top: 60px;   /* push below navbar */
+    width: 100vw;
+    height: calc(100vh - 60px);
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 900px;
+    padding: 0 20px;
+    text-align: left;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  .hero p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+  .btn {
+    background: white;
+    color: #764ba2;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  .btn:hover {
+    background-color: #5a3991;
+    color: white;
+  }
+  .social-icons {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  filter: invert(1); /* make icon white if it's black */
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
