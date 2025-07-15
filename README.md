@@ -4,7 +4,7 @@ This is my personal portfolio website built using **HTML**, **CSS**, and **JavaS
 
 ## 🌐 Live Demo
 
-[🔗 View Portfolio Website](https://your-domain.com)  
+[🔗 View Portfolio Website](www.aalokbajgain.com.np)  
 <!-- Replace with your .com.np, Netlify, or Vercel URL -->
 
 ## 🛠️ Technologies Used
